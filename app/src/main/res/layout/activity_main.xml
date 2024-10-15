@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título do Aplicativo -->
+
+        <TextView
+            android:id="@+id/text_app_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"    
+            android:background="@color/orange"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/digital_menu"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Seção de Entradas -->
+
+        <TextView
+            android:id="@+id/text_section_starters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/starters_title"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/text_app_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_app_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_app_title" />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/checkBox_starters1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_section_starters"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/checkBox_starters1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/starters_check1"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_section_starters"
+            app:layout_constraintTop_toBottomOf="@+id/text_section_starters" />
+
+        <CheckBox
+            android:id="@+id/checkBox_starters2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/starters_check2"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_starters1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_starters1"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_starters1" />
+
+        <CheckBox
+            android:id="@+id/checkBox_starters3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/starters_check3"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_starters2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_starters2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_starters2" />
+
+        <CheckBox
+            android:id="@+id/checkBox_starters4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/starters_check4"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_starters3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_starters3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_starters3" />
+
+        <!-- Seção dos Principais -->
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/text_section_mains"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox_starters4"
+            app:layout_constraintVertical_bias="0.727" />
+
+        <TextView
+            android:id="@+id/text_section_mains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/main_title"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/text_app_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_starters4" />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/checkBox_mains1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_section_mains" />
+
+        <CheckBox
+            android:id="@+id/checkBox_mains1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/mains_check1"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_section_mains"
+            app:layout_constraintTop_toBottomOf="@+id/text_section_mains" />
+
+        <CheckBox
+            android:id="@+id/checkBox_mains2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/mains_check2"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_mains1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_mains1"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_mains1" />
+
+        <CheckBox
+            android:id="@+id/checkBox_mains3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/mains_check3"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_mains2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_mains2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_mains2" />
+
+        <CheckBox
+            android:id="@+id/checkBox_mains4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/mains_check4"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_mains3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_mains3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_mains3" />
+
+        <!-- Seção das Bebidas -->
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/text_section_drinks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox_mains4"
+            app:layout_constraintVertical_bias="0.727" />
+
+        <TextView
+            android:id="@+id/text_section_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/drinks_title"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/text_app_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_mains4" />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/checkBox_drinks1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_section_drinks" />
+
+        <CheckBox
+            android:id="@+id/checkBox_drinks1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/drinks_check1"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_section_drinks"
+            app:layout_constraintTop_toBottomOf="@+id/text_section_drinks" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox_drinks2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/drinks_check2"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_drinks1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_drinks1"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_drinks1" />
+
+        <CheckBox
+            android:id="@+id/checkBox_drinks3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/drinks_check3"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_drinks2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_drinks2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_drinks2" />
+
+        <!-- Seção das Sobremesas -->
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/text_section_desserts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox_drinks3"
+            app:layout_constraintVertical_bias="0.727" />
+
+        <TextView
+            android:id="@+id/text_section_desserts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/desserts_title"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/text_app_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_drinks3" />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            app:layout_constraintBottom_toTopOf="@id/checkBox_desserts1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_section_desserts" />
+
+        <CheckBox
+            android:id="@+id/checkBox_desserts1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/desserts_check1"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_section_desserts"
+            app:layout_constraintTop_toBottomOf="@+id/text_section_desserts" />
+
+        <CheckBox
+            android:id="@+id/checkBox_desserts2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/red"
+            android:padding="8dp"
+            android:text="@string/desserts_check2"
+            android:textColor="#800D0D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox_desserts1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox_desserts1"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_desserts1" />
+
+        <!-- Seção Final - Resultado e Botão finalizar-->
+
+        <TextView
+            android:id="@+id/text_section_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/text_resu"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/text_app_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_desserts2" />
+
+        <Button
+            android:id="@+id/button_finalize_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF5722"
+            android:padding="16dp"
+            android:text="@string/button_finalize"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_section_result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

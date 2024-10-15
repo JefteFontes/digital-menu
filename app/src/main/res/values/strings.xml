@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Digital Menu</string>
+    <string name="digital_menu">Digital Menu</string>
+    <string name="starters_title">Entradas</string>
+    <string name="starters_check1">Entrada 1</string>
+    <string name="starters_check2">Entrada 2</string>
+    <string name="starters_check3">Entrada 3</string>
+    <string name="starters_check4">Entrada 4</string>
+    <string name="main_title">Principais</string>
+    <string name="mains_check1">Principal 1</string>
+    <string name="mains_check2">Principal 2</string>
+    <string name="mains_check3">Principal 3</string>
+    <string name="mains_check4">Principal 4</string>
+    <string name="drinks_title">Bebidas</string>
+    <string name="drinks_check1">Bebidas 1</string>
+    <string name="drinks_check2">Bebidas 2</string>
+    <string name="drinks_check3">Bebidas 3</string>
+    <string name="desserts_title">Sobremesas</string>
+    <string name="desserts_check1">Sobremesas 1</string>
+    <string name="desserts_check2">Sobremesas 2</string>
+    <string name="text_resu">Total: R$ 0.00</string>
+    <string name="button_finalize">Finalizar Pedido</string>
+</resources>
